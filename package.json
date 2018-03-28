@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "conventional-commit-types": "^2.0.0",
+    "cz-leju-changelog": "git+https://github.com/wangshub/cz-conventional-changelog.git",
     "lodash.map": "^4.5.1",
     "longest": "^1.0.1",
     "right-pad": "^1.0.1",
