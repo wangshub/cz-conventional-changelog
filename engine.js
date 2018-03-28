@@ -81,12 +81,12 @@ module.exports = function (options) {
         }, {
           type: 'confirm',
           name: 'isIssueAffected',
-          message: 'Does this change affect any open issues?',
+          message: '这次改动是否关联了某一个 Issue ？',
           default: false
         }, {
           type: 'input',
           name: 'issues',
-          message: 'Add issue references (e.g. "fix #123", "re #123".):\n',
+          message: '请添加关联的 Issue (e.g. "fix #123", "re #123".):\n',
           when: function(answers) {
             return answers.isIssueAffected;
           }
