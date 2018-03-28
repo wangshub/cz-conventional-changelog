@@ -13,10 +13,10 @@
     "type": "git",
     "url": "https://github.com/wangshub/cz-conventional-changelog.git"
   },
-  "author": "Jim Cummins <easternslope@yeah.net>",
+  "author": "wangshub <easternslope@yeah.net>",
   "license": "MIT",
   "dependencies": {
-    "conventional-commit-types": "^2.0.0",
+    "conventional-commit-types": "git+https://github.com/wangshub/conventional-commit-types.git",
     "cz-leju-changelog": "git+https://github.com/wangshub/cz-conventional-changelog.git",
     "lodash.map": "^4.5.1",
     "longest": "^1.0.1",
