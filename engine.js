@@ -39,8 +39,8 @@ module.exports = function (options) {
     // By default, we'll de-indent your commit
     // template and will keep empty lines.
     prompter: function(cz, commit) {
-      console.log('\nLine 1 will be cropped at 100 characters. All other lines will be wrapped after 100 characters.\n');
-
+      // console.log('\nLine 1 will be cropped at 100 characters. All other lines will be wrapped after 100 characters.\n');
+      console.log('\n 第1行将裁剪为100个字符。所有其他行将在100个字符后显示。 \n');
       // Let's ask some questions of the user
       // so that we can populate our commit
       // template.
@@ -57,24 +57,24 @@ module.exports = function (options) {
         }, {
           type: 'input',
           name: 'scope',
-          message: 'What is the scope of this change (e.g. component or file name)? (press enter to skip)\n'
+          message: '这次改动的范围 (e.g. 组件 or 文件名)? (按 enter 跳过)\n'
         }, {
           type: 'input',
           name: 'subject',
-          message: 'Write a short, imperative tense description of the change:\n'
+          message: '对这次改动起一个标题：\n'
         }, {
           type: 'input',
           name: 'body',
-          message: 'Provide a longer description of the change: (press enter to skip)\n'
+          message: '对这次改动写一个详细的描述：(按 enter 跳过)\n'
         }, {
           type: 'confirm',
           name: 'isBreaking',
-          message: 'Are there any breaking changes?',
+          message: '有没有突破性的改动？',
           default: false
         }, {
           type: 'input',
           name: 'breaking',
-          message: 'Describe the breaking changes:\n',
+          message: '请描述这次突破性的改动：\n',
           when: function(answers) {
             return answers.isBreaking;
           }
