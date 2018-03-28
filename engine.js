@@ -52,7 +52,7 @@ module.exports = function (options) {
         {
           type: 'list',
           name: 'type',
-          message: 'Select the type of change that you\'re committing:',
+          message: '请选择 committing 的类型:',
           choices: choices
         }, {
           type: 'input',
